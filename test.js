@@ -4,8 +4,8 @@
         const symbols = '+-_$~'
         const blocked = 'cpsx'
         let maxLength = (numbers+litters+symbols).length
-        let str: any = '';
-        let n: any = prompt('string`s length');
+        let str= '';
+        let n= prompt('string`s length');
         while (str.length < n) {
           let a = (numbers+litters+symbols)[Math.floor(Math.random() * maxLength)]
           if (!blocked.includes(a))
